@@ -1,0 +1,80 @@
+body {
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    color: #5D3A3A; /* Texto en tono marrón suave */
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    color: #D81B60; /* Rosa fuerte para títulos */
+}
+
+
+
+.card {
+    background-color: #FADADD; /* Fondo rosa claro */
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #6A4A4A;
+    max-width: 600px; /* Tamaño máximo de la card */
+    margin: auto; /* Centrar la card en la página */
+}
+
+button {
+    background-color: #FF80AB; /* Botones rosados */
+    color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #F48FB1;
+}
+
+#arbol {
+    border: 2px solid #FF80AB;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #FADADD;
+    overflow: auto;
+}
+
+.nodo-arbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.nodo-arbol .hijos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los hijos */
+}
+
+.nodo-arbol .contenido-nodo {
+    background: linear-gradient(135deg, #FF9A9E, #FAD0C4);
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.nodo-arbol:hover .contenido-nodo {
+    transform: scale(1.1);
+}
+
+.error {
+    color: #D81B60;
+    font-weight: bold;
+}
